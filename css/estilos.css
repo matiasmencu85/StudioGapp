@@ -1,0 +1,782 @@
+/*fuentes
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Acme', sans-serif;
+font-family: 'Righteous', cursive;
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Pacifico|Righteous&display=swap');
+
+@font-face {
+  font-family: "Acme"
+	src: url(../fonts/Acme-Regular.ttf);  
+}
+@font-face {
+  font-family: "Lobster"
+	src: url(../fonts/Lobster-Regular.ttf);  
+}
+@font-face {
+  font-family: "Pacifico"
+ src: url(../fonts/Pacifico-Regular.ttf);  
+}
+
+@font-face {
+  font-family: "Righteous"
+	src: url(../fonts/Righteous-Regular.ttf);  
+}
+
+
+
+*{
+box-sizing: border-box;   
+}
+img{
+    display: block;
+    max-width: 100%;
+	margin-right: auto;
+}
+body{
+	
+    margin:0;
+	font-family: 'Righteous', cursive;
+	
+}
+
+h1,h2,h3,h4,h5,h6{
+	
+font-family: 'Pacifico', cursive;
+letter-spacing: 1,5px;
+}
+
+.section__titulo{
+    text-align:center;
+    font-size: 15px;
+    color:#A128BC;
+	 font-family: 'Pacifico', cursive;
+	
+  
+	}
+.contenedor{
+    
+    margin:auto;
+    width: 99%;
+    }
+
+/*------------------estilos del header-------*/
+.header{  
+ height: 90px;
+}
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+	
+}
+
+.logo,.icon-menu{  
+ margin:5px; 
+ color: #fff;   
+}
+.logo{
+	
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+}
+a1{ 
+	
+	
+	font-size: 20px;
+    text-decoration: none;
+    color:#fff;
+    
+}
+
+.icon-menu {
+    display:block;
+    width:40px;
+    height: 40px;
+	border-top: 20px;
+    font-size: 25px;
+    background: skyblue;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*------------------estilos del menu--------*/
+.nav {
+  
+  position: absolute;
+  top: 25px;
+  left: -100%;
+  width: 80%;  
+  transition: all 1s;
+  color: aqua;
+	font-size: 15px;
+}
+.menu {
+    font-size: 20px;
+   list-style:none;
+    padding: 0px;
+    margin: auto;
+	margin-top: 5px;
+	margin-right: px;
+	
+		
+}
+
+.menu__link {
+	
+    color:white;
+    display:block;
+    padding: 15px;
+    background: skyblue;
+	text-align: center;
+	text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.menu__link:hover,.select {
+    background: white; 
+    color:skyblue;
+	
+}
+.mostrar{
+   
+    left:0;
+}
+
+
+/*--------------------ESTILOS DE BANNER----------*/
+
+.banner{
+   margin-top: -200px;
+   position: absolute;
+   z-index: -1000;
+   margin-bottom: 10px;
+	
+}
+.banner__titulo_horario{
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	position:absolute;
+	
+}
+
+
+
+
+.banner .contenedor{
+	
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: white;
+    text-align: center;
+	font-size: 15px;
+}
+.banner__titulo{
+     
+       
+	font-size: 30px;
+}
+.banner__txt{
+
+    display:none;
+	
+}
+
+/*--------------------estilos de info-----------------*/
+
+.info__columna{
+    background: #4DCAEB;
+    padding: 15px;
+    color:#fff;
+    margin-bottom: 15px;
+	text-decoration: none;
+}
+.info__titulo{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+    margin-top: 0px;
+}
+h2{
+	
+	text-decoration: none;
+}
+.info__txt{
+	text-align:inherit;
+	font-size: 15px;
+}
+
+/*--------------------estilos de cursos-----------------*/
+.cursos__columna{
+    
+   position:relative;
+    margin-bottom: 40px;
+}
+.cursos__descripcion1{
+    position:absolute;
+    top:0;
+    left:0;
+    color:#fff;
+    background: rgba(0,0,0,0.0);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+        
+}
+.cursos__descripcion{
+    position:static;
+    top:0;
+    left:0;
+    color:#fff;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 45%;
+    padding: 5px;
+        
+}
+.section__titulo{
+	font-size: 20px;
+	
+	
+}
+.cursos__titulo{
+    font-size: 20px;
+    margin: 5px 0;
+    
+}
+.cursos__img{
+    width: 100%;
+}
+.cursos__txt{
+	font-size: 20px
+    
+}
+
+/*----------------------------estilos de footer*---------------------*/ 
+.footer{
+    background: #333;
+    padding: 10px;
+    color:#fff;
+    text-align: center;
+}
+.footer .social [class^="icon-"] {
+    display:inline-block;
+    color:#333;
+    text-decoration:none;
+    font-size:30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+        
+}
+
+
+/*----------------------------estilos de animaciones de horarios*/
+p1{
+	font-weight: bold;
+	text-align:inherit;
+	margin-top: 6em;
+	font-size: 15px;
+	color:white;
+	display: inline-block;
+}
+.text1 {
+	
+	animation: bounce1 .5s alternate infinite ease-in; 
+}
+.text2 {
+	animation: bounce2 .5s alternate infinite ease-in; 
+}
+.text3 {
+	animation: bounce3 .5s alternate infinite ease-in; 
+}
+
+@keyframes bounce1 {
+	0%{
+		transform: translateX(-40%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes bounce2 {
+	0%{
+		transform: translateY(-180%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+
+@keyframes bounce3 {
+	0%{
+		transform: translateX(40%);
+	}
+	100%{
+		transform: translateX(-10%);
+	}
+}
+
+/*----------------------estilos responsive-------------------*/
+
+@media(min-width:300px){
+	.banner{
+   margin-top: -95px;
+   position: relative;
+   z-index: -1000;
+   margin-bottom: 10px;
+	
+        
+            }
+	
+	.banner__titulo{
+		font-size: 20px;
+	}
+	
+	.icon-menu {
+	margin-top: 10px;	
+	
+   border-top: 10px;
+}
+	
+	
+	
+	.logo{
+		margin-top: -40px;
+		font-size: 15px;
+	}
+	a1{ 
+	
+	
+	font-size: 10px;
+    text-decoration: overline;
+    color:#fff;
+}
+@media(min-width:480px){
+	.info_titulo{
+		font-size: 20px;
+		text-align: center;
+	}
+	.form{
+		
+	}
+	
+    .logo{
+		position: inherit;
+        font-size:25px;
+		
+    }
+	
+	a1{ 
+	
+	
+	font-size: 15px;
+    text-decoration: none;
+    color:#fff;
+}
+	
+    .banner__titulo{
+        font-size: 25px;
+        margin: 5px 0 ;
+    }
+    .banner__txt{
+        display:block;
+        font-size: 13px
+        margin: 7px 0 ;   
+    }
+    
+	.info,.cursos{
+		display:flex;
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+    
+	
+    .info__columna{
+        width:21%;
+		
+    }
+    
+   
+     .section__titulo{
+        width: 100%;
+		 margin-top: auto;
+    }
+	
+    .cursos{
+        flex-wrap: wrap;
+        margin-top:0;
+    }
+    .cursos__columna{
+       width:  48%; 
+        display: bock;
+		
+    }
+    .footer .social [class^="icon-"]{
+        margin: 0 10px;
+    }
+	.cursos__txt{
+	font-size: 12px
+}
+ 
+}
+/*---------------------------------------------------------------------------------*/
+@media(min-width:768px){
+    .banner__titulo{
+        font-size: 30px;
+    }
+	
+	.banner__txt{
+        display:block;
+        font-size: 25px
+        margin: 7px 0 ;   
+    }
+   
+	.cursos__titulo{
+        font-size: 30px;
+    }
+    .cursos__txt{
+        font-size: 20px;
+    }
+	.info__titulo{
+		text-decoration: none;
+        font-size: 15px;
+        text-align: center;
+    }
+	.info__columna{
+        width:24%;
+    }
+	
+	p1{
+		font-size: 20px;
+	}
+	
+	.logo{
+	
+	font-size: 30px;
+	font-family: 'Lobster', cursive;
+    }
+    a1{ 
+	
+	
+	font-size: 25px;
+    text-decoration: none;
+    color:#fff;
+    
+}
+	
+	
+	
+      }
+
+	/*------------------------------------------------------------------------------*/
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    .section__titulo{
+        font-size: 50px;
+        margin: 20px;
+        
+    }
+    .nav{
+        position:static;
+        width: auto;
+        
+        }
+    .menu{
+        display:flex;
+            }
+    .menu__link{
+       
+        font-size: 20px;
+    }
+    .select{
+        color:#fff;
+        background: royalblue;
+    }
+    .icon-menu{
+        display:none;
+    }
+	
+	.logo{
+		margin-top: auto;
+        font-size: 35px;
+    }
+	a1{ 
+	
+	
+	font-size: 30px;
+    text-decoration: none;
+    color:#fff;
+    
+}
+    .banner__titulo{
+		
+        font-size: 40px;
+    }
+    .banner__txt{
+        font-size: 20px;
+    }
+    .info__titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+	.info__columna{
+		
+		width: 24%;
+		
+	}
+	.info__txt{
+	text-align:inherit;
+	font-size: 20px;
+}
+    .cursos__descripcion{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .cursos__titulo{
+        font-size: 30px;
+    }
+    .cursos__txt{
+        font-size: 20px;
+    }
+	p1{
+		font-size: 30px;
+	}
+	.banner__img{
+	width: 120%;
+	 justify-content: space-around;	
+    }
+}
+/*---------------------------------------------------------------------------------*/
+@media(min-width:1280px){
+   
+	
+	
+	.contenedor{
+        width: 1280px;
+    }
+    .logo{
+		margin-top: auto;
+        font-size: 40px;
+    }
+	a1{ 
+	
+	
+	font-size: 35px;
+    text-decoration: none;
+    color:#fff;
+    
+}
+     .contenedor{
+        top:40%;
+       
+    }
+    .info{
+        margin-top:-30px;
+    }
+	.info__columna{
+        width:24%;
+    }
+	.banner{
+	width: 110%;
+		
+	}
+	.banner__img{
+	 width: 110%;
+	 justify-content: space-around;
+	
+    }
+	.info__titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+	p1{
+		font-size: 40px;
+	}
+	
+	.cursos__titulo{
+    font-size: 35px;
+    margin: 5px 0;
+    
+}
+.cursos__txt{
+	font-size: 30px
+}
+	
+}
+
+
+
+
+/*----------------------estilos de galerias fotos-------------------*/
+
+
+    .fotos{
+       width: 90%;
+        margin: auto;
+        list-style: nome;
+        padding: 20px;
+        box-sizing: border-box;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+  
+.fotos li{
+    
+    margin: 5px;
+} 
+
+.fotos img{
+    width: 150px;
+    height: 100px;
+}
+
+/*----------------------estilos del modal-------------------*/
+.modal{
+    display: none;
+}
+
+
+.modal:target{
+    display: block;
+    position:fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color:#fff;
+    font-size: 30 px;
+    text-align: center;
+    margin: 15px 0;
+    
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+.imagen img {
+    
+  
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar{
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+    
+    
+}
+
+
+/*--------------------ESTILOS DE FORMULARIO----------*/
+
+	
+.formu{
+	
+	width: auto;
+	height:auto;
+    background-image:url(prueba.jpg);
+    background-size: 100vw 100vh;  
+	background-attachment: fixed;
+	color:black;
+	margin: 0 ;
+	
+	padding: 100px 100px;
+	box-sizing: border-box;
+	margin-top: -40px;
+	border-radius: 7px;
+	
+	
+	
+}
+
+.input, textarea{
+	
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+}
+
+.textarea{
+	min-height: 100px;
+	max-height: 200px;
+	min-width: 100%;
+}
+
+#boton{
+	background: #31384A;
+	color: #fff;
+	padding: 20px;
+	
+}
+#boton:hover{
+	cursor: pointer;
+	background: #fff;
+	color:aqua;
+
+	
+}
+.form{
+	
+}
+
